@@ -14,6 +14,7 @@ const createWindow = () => {
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
+      webviewTag: true  // 启用webview标签
     },
   });
 
